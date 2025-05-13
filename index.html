@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rakenshinional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top-bar">
+    <h1>The Rakenshinional</h1>
+    <div class="burger-menu" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- 🔹 Бургер-меню (фиксированное окно) -->
+<div class="burger-overlay" id="burgerOverlay">
+    <nav class="burger-nav">
+        <ul>
+            <li><a href="https://m.twitch.tv/therakenshinional/home?tt_content=channel&tt_medium=mobile_web_share" target="_blank">Twitch</a></li>
+            <li><a href="https://t.me/TheRakenshinional" target="_blank">Telegram</a></li>
+            <li><button onclick="toggleMenu()">Закрыть</button></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="main-logo"></div>
+
+<div class="timer-container">
+    <h2>До начала турнира осталось:</h2>
+    <div id="timer"></div>
+</div>
+
+<main class="content">
+    <section class="welcome-section">
+        <h2>Добро пожаловать в The Rakenshinional</h2>
+        <p class="season-info">🔥 Сезон 1 — Только начало! 🔥</p>
+        <p>Турнир, где главное — фан и мемы!</p>
+    </section>
+    <section class="tournament-description">
+        <h2>🔥 The Rakenshinional 🔥</h2>
+        <p><strong>The Rakenshinional</strong> – это <strong>уникальный турнир</strong>, где <strong>главное не победа, а веселье</strong>! 🎭🔥</p>
+        <p>Здесь <strong>нет места для киберспортивных стратегий</strong>, только <strong>чистый хаос, мемы и неожиданные моменты</strong>!</p>
+        <ul>
+            <li>✅ <strong>Обычный турнир (1v1)</strong> – проверка <strong>настоящего мастерства</strong> (и немного удачи).</li>
+            <li>✅ <strong>Custom Hero Chaos</strong> – <strong>хаотичная битва</strong>, где <strong>правила диктует сам режим</strong>.</li>
+            <li>✅ <strong>Призы</strong> – от <strong>денег до майонеза</strong> (да, ты не ослышался).</li>
+            <li>✅ <strong>Стрим на Twitch</strong> – <strong>зрители следят за каждым эпичным фейлом</strong>.</li>
+            <li>✅ <strong>Мемы, фан, легендарные моменты</strong> – <strong>это не просто турнир, это история</strong>!</li>
+        </ul>
+    </section>
+    <section class="welcome-section">
+    </section>
+
+    <section class="tournament-registration">
+        <h2>📩 Как подать анкету для участия?</h2>
+        <p>Заполни анкету и отправь её на <strong>therakenshinional@gmail.com</strong>!</p>
+        <ul>
+            <li><strong>Тема письма:</strong> Анкета на участие - [Ваш Никнейм]</li>
+            <li><strong>ФИО / Никнейм</strong></li>
+            <li><strong>Возраст</strong></li>
+            <li><strong>Контактный Telegram (@username)</strong></li>
+            <li><strong>Профиль в Steam (ссылка на профиль)</strong></li>
+            <li><strong>Опыт в Dota 2 / Custom Hero Chaos (не обязательно)</strong></li>
+            <li><strong>Почему хотите участвовать?</strong></li>
+            <li><strong>Готовы ли вписать своё имя в историю раков? 🦀🔥</strong></li>
+        </ul>
+    </section>
+</main>
+
+<footer class="bottom-bar">
+    <p>Контакты: <a href="mailto:therakenshinional@gmail.com">therakenshinional@gmail.com</a></p>
+</footer>
+
+<!-- 🔹 Видео-презентация (пока закомментировано) -->
+<!-- 
+<section class="video-presentation">
+    <h2>🎥 Презентация The Rakenshinional</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/ВАШ_ИД_ВИДЕО" 
+            title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+-->
+
+<script src="script.js"></script>
+</body>
+</html>
