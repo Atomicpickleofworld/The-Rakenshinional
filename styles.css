@@ -5,6 +5,7 @@ html, body {
     color: white;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
+    text-align: center;
 }
 
 
@@ -160,8 +161,11 @@ html, body {
 }
 
 .tournament-registration ul {
-    list-style: none;
-    padding: 0;
+    list-style-position: inside; /* Точки останутся рядом с текстом */
+    padding-left: 0; /* Убираем лишний отступ */
+    display: inline-block; /* Делаем список компактным */
+    text-align: left; /* Чтобы текст был ровным */
+    margin: auto; /* Центрируем */
 }
 
 .tournament-registration ul li {
