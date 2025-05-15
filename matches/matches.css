@@ -1,3 +1,4 @@
+
 html, body {
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@ html, body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     display: flex;
-    flex-direction: column; /* �9�7 ���ѧ���ݧѧԧѧ֧� ��ݧ֧ާ֧ߧ�� �� �ܧ�ݧ�ߧߧ� */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -18,8 +19,7 @@ html, body {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 95vw;
-    max-width: 1000px;
+    width: 100vw;
     height: 60px;
     background-color: #1f1f1f;
     display: flex;
@@ -29,71 +29,73 @@ html, body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1002;
 }
-/* �9�7 ���ߧ��ܧ� �ӧ�٧ӧ�ѧ�� (����֧ݧܧ�) */
 .back-button {
-    display: block; /* �9�7 ���֧ݧѧ֧� �ܧߧ��ܧ� �ҧݧ��ߧ��, ����ҧ� ��ߧ� ��ק�ܧ� �ӧ��է֧ݧ�ݧѧ�� */
+    display: block;
     text-align: center;
     width: fit-content;
-    margin: 20px auto; /* �9�7 ���֧ߧ��ڧ��֧� �֧� */
+    margin: 20px auto; 
     padding: 10px 20px;
     font-size: 22px;
-    background-color: #ff5722; /* �9�7 ���֧ݧѧ֧� �֧� �٧ѧާ֧�ߧ�� */
+    background-color: #ff5722; 
     color: white;
     border-radius: 5px;
-    border: 2px solid #ffcc00; /* �9�7 ����ҧѧӧݧ�֧� ��ҧӧ�էܧ� */
+    border: 2px solid #ffcc00;
     text-decoration: none;
     transition: 0.3s ease-in-out;
 }
 
-/* �9�7 �����֧ܧ� �ߧѧӧ֧է֧ߧڧ� */
 .back-button:hover {
     background-color: #ffcc00;
     color: #121212;
     border: 2px solid #ff5722;
 }
-/* �9�7 ����ߧ�֧ۧߧ֧� �ާѧ��֧� */
 .matches-container {
     padding: 80px 20px 20px;
     text-align: center;
 }
 
-/* �9�7 ���ڧߧ�-���� �էݧ� ��ѧҧݧڧ�� */
 .matches-container {
     padding: 30px;
     text-align: center;
     background-color: #1a1a1a;
     border-radius: 10px;
-    margin-top: 80px; /* �9�7 ���֧�֧�� ��ѧҧݧڧ�� �ߧ� �٧ѧݧ֧٧ѧ֧� �ߧ� `top-bar` */
+    margin-top: 80px; 
 }
 
-/* �9�7 ���ѧҧݧڧ�� �ާѧ��֧� */
 .match-table {
-    width: 80vw; /* �9�7 ���֧ݧѧ֧� ��ѧҧݧڧ�� �ѧէѧ��ڧӧߧ��ާ� */
-    max-width: 800px; /* �9�7 ���ԧ�ѧߧڧ�ڧӧѧ֧� �ާѧܧ�ڧާѧݧ�ߧ�� ��ڧ�ڧߧ� */
-    margin: auto; /* �9�7 ���֧ߧ��ڧ��֧� ��ѧҧݧڧ�� */
+    width: 80vw; 
+    max-width: 800px; 
+    margin: auto; 
     border-collapse: collapse;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* �9�7 ���ѧ٧է֧ݧڧ�֧ݧ� */
+/* 🔹 Разделители */
 .match-table th, .match-table td {
     padding: 10px;
-    border: 2px solid #0f0f0f; /* �9�7 ����ҧѧӧݧ�֧� ��ק�ܧڧ� ��קާߧ��� �ԧ�ѧߧڧ�� */
+    border: 2px solid #0f0f0f; 
     text-align: center;
 }
 
  .match-table th, .match-table td {
     padding: 10px;
-    border: 2px solid #181818; /* �9�7 ���է֧ݧѧݧ� ��ѧ٧է֧ݧڧ�֧ݧ� �ҧ�ݧ֧� ��֧ާߧ��ާ� */
+    border: 2px solid #181818; 
     text-align: center;
 }
 
 .match-table td {
-    background-color: #292929; /* �9�7 ���֧ާߧ��� ���� �ҧ֧� �ҧ֧ݧ�ԧ� */
+    background-color: #292929; 
     color: white;
 }
-/* �9�7 ���ѧܧ�֧�ݧ֧ߧߧ��� `bottom-bar` */
+.match-formats ul {
+    list-style-position: inside; /* Сохранит точки рядом с текстом */
+    padding-left: 20px; /* Добавит небольшой отступ */
+    text-align: left; /* Выравнивание текста */
+}
+.match-formats h3 {
+    text-align: center; /* Сделаем заголовок по центру */
+}
 }
 #secretCode {
     width: fit-content;
@@ -104,10 +106,9 @@ html, body {
     box-shadow: 0px 0px 15px rgba(0, 255, 153, 0.5);
     text-align: center;
 }
-/* �9�7 ���ݧ���֧ߧߧ�� ���ݧ� �ӧӧ�է� */
 #userInput {
     width: auto;
-    max-width: 250px; /* �9�7 ���ԧ�ѧߧڧ�ڧӧѧ֧� ��ڧ�ڧߧ� */
+    max-width: 250px; 
     padding: 10px;
     font-size: 18px;
     background-color: #121212;
@@ -115,17 +116,15 @@ html, body {
     border: 2px solid #00ff99;
     border-radius: 5px;
     text-align: center;
-    display: inline-block; /* �9�7 ���ҧڧ�ѧ֧� �ߧ֧ߧ�اߧ�� ��ѧ���ا֧ߧڧ� */
+    display: inline-block; 
     transition: all 0.3s ease-in-out;
 }
 
-/* �9�7 �����֧ܧ� ���� ���ܧ��� */
 #userInput:focus {
     outline: none;
     box-shadow: 0px 0px 20px rgba(0, 255, 153, 1);
 }
 
-/* �9�7 ���ߧ��ܧ� */
 button {
     margin-top: 15px;
     padding: 10px 20px;
