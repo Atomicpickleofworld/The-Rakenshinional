@@ -1,1 +1,144 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column; /* �9�7 ���ѧ���ݧѧԧѧ֧� ��ݧ֧ާ֧ߧ�� �� �ܧ�ݧ�ߧߧ� */
+    justify-content: center;
+    align-items: center;
+}
 
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95vw;
+    max-width: 1000px;
+    height: 60px;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1002;
+}
+/* �9�7 ���ߧ��ܧ� �ӧ�٧ӧ�ѧ�� (����֧ݧܧ�) */
+.back-button {
+    display: block; /* �9�7 ���֧ݧѧ֧� �ܧߧ��ܧ� �ҧݧ��ߧ��, ����ҧ� ��ߧ� ��ק�ܧ� �ӧ��է֧ݧ�ݧѧ�� */
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto; /* �9�7 ���֧ߧ��ڧ��֧� �֧� */
+    padding: 10px 20px;
+    font-size: 22px;
+    background-color: #ff5722; /* �9�7 ���֧ݧѧ֧� �֧� �٧ѧާ֧�ߧ�� */
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #ffcc00; /* �9�7 ����ҧѧӧݧ�֧� ��ҧӧ�էܧ� */
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* �9�7 �����֧ܧ� �ߧѧӧ֧է֧ߧڧ� */
+.back-button:hover {
+    background-color: #ffcc00;
+    color: #121212;
+    border: 2px solid #ff5722;
+}
+/* �9�7 ����ߧ�֧ۧߧ֧� �ާѧ��֧� */
+.matches-container {
+    padding: 80px 20px 20px;
+    text-align: center;
+}
+
+/* �9�7 ���ڧߧ�-���� �էݧ� ��ѧҧݧڧ�� */
+.matches-container {
+    padding: 30px;
+    text-align: center;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    margin-top: 80px; /* �9�7 ���֧�֧�� ��ѧҧݧڧ�� �ߧ� �٧ѧݧ֧٧ѧ֧� �ߧ� `top-bar` */
+}
+
+/* �9�7 ���ѧҧݧڧ�� �ާѧ��֧� */
+.match-table {
+    width: 80vw; /* �9�7 ���֧ݧѧ֧� ��ѧҧݧڧ�� �ѧէѧ��ڧӧߧ��ާ� */
+    max-width: 800px; /* �9�7 ���ԧ�ѧߧڧ�ڧӧѧ֧� �ާѧܧ�ڧާѧݧ�ߧ�� ��ڧ�ڧߧ� */
+    margin: auto; /* �9�7 ���֧ߧ��ڧ��֧� ��ѧҧݧڧ�� */
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* �9�7 ���ѧ٧է֧ݧڧ�֧ݧ� */
+.match-table th, .match-table td {
+    padding: 10px;
+    border: 2px solid #0f0f0f; /* �9�7 ����ҧѧӧݧ�֧� ��ק�ܧڧ� ��קާߧ��� �ԧ�ѧߧڧ�� */
+    text-align: center;
+}
+
+ .match-table th, .match-table td {
+    padding: 10px;
+    border: 2px solid #181818; /* �9�7 ���է֧ݧѧݧ� ��ѧ٧է֧ݧڧ�֧ݧ� �ҧ�ݧ֧� ��֧ާߧ��ާ� */
+    text-align: center;
+}
+
+.match-table td {
+    background-color: #292929; /* �9�7 ���֧ާߧ��� ���� �ҧ֧� �ҧ֧ݧ�ԧ� */
+    color: white;
+}
+/* �9�7 ���ѧܧ�֧�ݧ֧ߧߧ��� `bottom-bar` */
+}
+#secretCode {
+    width: fit-content;
+    max-width: 300px;
+    padding: 20px;
+    background-color: rgba(15, 15, 15, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 153, 0.5);
+    text-align: center;
+}
+/* �9�7 ���ݧ���֧ߧߧ�� ���ݧ� �ӧӧ�է� */
+#userInput {
+    width: auto;
+    max-width: 250px; /* �9�7 ���ԧ�ѧߧڧ�ڧӧѧ֧� ��ڧ�ڧߧ� */
+    padding: 10px;
+    font-size: 18px;
+    background-color: #121212;
+    color: #00ff99;
+    border: 2px solid #00ff99;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block; /* �9�7 ���ҧڧ�ѧ֧� �ߧ֧ߧ�اߧ�� ��ѧ���ا֧ߧڧ� */
+    transition: all 0.3s ease-in-out;
+}
+
+/* �9�7 �����֧ܧ� ���� ���ܧ��� */
+#userInput:focus {
+    outline: none;
+    box-shadow: 0px 0px 20px rgba(0, 255, 153, 1);
+}
+
+/* �9�7 ���ߧ��ܧ� */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00ff99;
+    color: black;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #007755;
+    box-shadow: 0px 0px 10px rgba(0, 255, 153, 0.8);
+}
