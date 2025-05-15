@@ -41,6 +41,9 @@ html, body {
     color: #ffcc00;
     font-weight: bold;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
 }
 .burger-menu {
@@ -197,23 +200,30 @@ html, body {
     border-radius: 10px;
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем весь блок */
 }
 
 .tournament-description h2 {
     color: #ff5722;
     font-size: 24px;
+    text-align: center; /* Выравниваем заголовок */
 }
 
 .tournament-description p {
     font-size: 18px;
     color: white;
+    text-align: center; /* Выравниваем текст */
 }
 
 .tournament-description ul {
-    list-style: none;
-    padding: 0;
+    list-style-position: inside; /* Оставляем точки рядом с текстом */
+    padding-left: 0;
+    display: inline-block;
+    text-align: left; /* Делаем текст аккуратным */
+    margin: auto;
 }
-
 .tournament-registration ul li {
     font-size: 18px;
     color: white; 
