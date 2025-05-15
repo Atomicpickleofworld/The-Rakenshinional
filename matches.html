@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание матчей | The Rakenshinional</title>
+    <link rel="stylesheet" href="matches/matches.css">
+</head>
+<body>
+
+<header class="top-bar">
+    <h1>Расписание матчей</h1>
+</header>
+<main class="matches-container">
+    <section class="current-matches">
+        <h2>🎮 Текущие матчи</h2>
+        <table class="match-table">
+            <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Игра</th>
+                    <th>Формат</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Сегодня</td>
+                    <td>Финал 1v1</td>
+                    <td>BO5</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <div class="back-container">
+        <a href="index.html" class="back-button">Назад</a>
+    </div>
+    <section class="upcoming-matches">
+        <h2>🕒 Будущие матчи</h2>
+        <table class="match-table">
+            <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Игра</th>
+                    <th>Формат</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>15 мая</td>
+                    <td>1v1 Турнир</td>
+                    <td>BO3</td>
+                </tr>
+                <tr>
+                    <td>18 мая</td>
+                    <td>Custom Hero Chaos</td>
+                    <td>FFA</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="past-matches">
+        <h2>📜 Прошедшие матчи</h2>
+        <table class="match-table">
+            <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Игра</th>
+                    <th>Результат</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10 мая</td>
+                    <td>1v1 Турнир</td>
+                    <td>Победитель: Player123</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+<div id="secretCode">
+    <p>Введи секретный код:</p>
+    <input type="text" id="userInput" placeholder="Введите код">
+    <button onclick="checkSecretCode()">Проверить</button>
+    <p id="resultMessage"></p>
+</div>
+
+<script src="matches/matches.js"></script>
+</body>
+</html>
